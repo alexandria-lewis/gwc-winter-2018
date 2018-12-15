@@ -1,4 +1,4 @@
-$.(document).ready(function(){
+$(document).ready(function(){
   $('.tabs').click(function(e) {
     e.preventDefault();
     $('.tab_content').hide();
