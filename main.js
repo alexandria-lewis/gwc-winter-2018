@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.tabs').click(function(e) {
     e.preventDefault();
     $('.tab_content').hide();
-    var selectTab = $(this).attr("href").replace('https://','');
+    var selectTab = $(this).data("href");
     
     $(selectTab).show();
   });
@@ -23,7 +23,7 @@ $(document).ready(function(){
   $(".linkMobile").click(function(e) {
     e.preventDefault();
     $('.tab_content').hide();
-    var selectTab = $(this).attr("href").replace('https://','');
+    var selectTab = $(this).data("href");
     $(selectTab).show();
     $(".fa-times").hide();
     $(".fa-bars").show();
