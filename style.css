@@ -3,82 +3,7 @@
 #084C61 midnight green (8,76,97)
 #DB504A jelly bean (219,80,74)
 #E3B505 citrine (227,181,5)*/
-/* ----------------------- Smaller Screens --------------------- */
-@media screen and (max-width: 920px) {
-  #firstCont{
-    flex-direction: column;
-  }
-  #mission, #blsCont{
-    width: 100% !important;
-  }
-  #mission{
-    text-align: center;
-    padding-bottom: 90px;
-  }
-  #blsCont{
-    justify-content: space-around !important;
-  }
-  #singleGirlComp{
-    height: 200px !important;
-  }
-  
-  #secondCont{
-    flex-direction: column;
-  }
-  #demoCont, #demograph{
-    width: 100% !important;
-  }
-  #demoCont{
-    padding-bottom: 90px;
-  }
-  #demograph h1{
-    text-align: center;
-  }
-  #courseRow{
-    flex-direction: column;
-  }
-  .courseRowContent{
-    width: 90% !important;
-    justify-content: space-around !important;
-  }
-  #courseRow img {
-    width: 108px !important;
-    height: 153px !important;
-  }
-  #mc_embed_signup{
-    width: 90% !important;
-  }
-  #facSecond{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .facTitle{
-    margin-bottom: 20px;
-  }
-  .facCards{
-    width: 80% !important;
-  }
-  .facCards img{
-    width: 50% !important;
-  }
-  #courseCont{
-    display: flex;
-    flex-direction: column;
-  }
-  #courseTable,#courseDetails{
-    width: 80% !important;
-  }
-  span.bigScreen{
-    display: none;
-  }
-  #burger{
-    display: block !important;
-  }
-  #mobileMenu{
-    display: block;
-  }
-}
+
 /* ----------------------- Main --------------------- */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -513,4 +438,81 @@ footer{
 
 footer p{
   font-size: .75em;
+}
+
+/* ----------------------- Smaller Screens --------------------- */
+@media screen and (max-width: 850px) {
+  #firstCont{
+    flex-direction: column;
+  }
+  #mission, #blsCont{
+    width: 100% !important;
+  }
+  #mission{
+    text-align: center;
+    padding-bottom: 90px;
+  }
+  #blsCont{
+    justify-content: space-around !important;
+  }
+  #singleGirlComp{
+    height: 200px !important;
+  }
+  
+  #secondCont{
+    flex-direction: column;
+  }
+  #demoCont, #demograph{
+    width: 100% !important;
+  }
+  #demoCont {
+    padding-bottom: 20px;
+  }
+  #demograph h1{
+    text-align: center;
+  }
+  #courseRow{
+    flex-direction: column;
+  }
+  .courseRowContent{
+    width: 90% !important;
+    justify-content: space-around !important;
+  }
+  #courseRow img {
+    width: 108px !important;
+    height: 153px !important;
+  }
+  #mc_embed_signup{
+    width: 90% !important;
+  }
+  #facSecond{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .facTitle{
+    margin-bottom: 20px;
+  }
+  .facCards{
+    width: 80% !important;
+  }
+  .facCards img{
+    width: 50% !important;
+  }
+  #courseCont{
+    display: flex;
+    flex-direction: column;
+  }
+  #courseTable,#courseDetails{
+    width: 80% !important;
+  }
+  span.bigScreen{
+    display: none;
+  }
+  #burger{
+    display: block !important;
+  }
+  #mobileMenu{
+    display: block;
+  }
 }
