@@ -1,0 +1,369 @@
+/* #2274A5 lapis lazuli (34,116,165)
+#F75C03 willpower orange (247,92,3)
+#084C61 midnight green (8,76,97)
+#DB504A jelly bean (219,80,74)
+#E3B505 citrine (227,181,5)*/
+/* ----------------------- Smaller Screens --------------------- */
+@media screen and (max-width: 920px) {
+  #firstCont{
+    flex-direction: column;
+  }
+  #mission, #blsCont{
+    width: 100% !important;
+  }
+  #mission{
+    text-align: center;
+    padding-bottom: 90px;
+  }
+  #blsCont{
+    justify-content: space-around !important;
+  }
+  #singleGirlComp{
+    height: 200px !important;
+  }
+  
+  #secondCont{
+    flex-direction: column;
+  }
+  #demoCont, #demograph{
+    width: 100% !important;
+  }
+  #demoCont{
+    padding-bottom: 90px;
+  }
+  #demograph h1{
+    text-align: center;
+  }
+  #courseRow{
+    flex-direction: column;
+  }
+  .courseRowContent{
+    width: 90% !important;
+    justify-content: space-around !important;
+  }
+  #courseRow img {
+    width: 108px !important;
+    height: 153px !important;
+  }
+  #mc_embed_signup{
+    width: 90% !important;
+  }
+  .facCards{
+    width: 80% !important;
+  }
+  .facCards img{
+    width: 50% !important;
+  }
+}
+/* ----------------------- Main --------------------- */
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+body{
+  margin: 0;
+}
+
+h1, h2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.alegreya{
+  font-family: 'Alegreya', serif;
+  font-weight: 900;
+}
+
+h1.alegreya{
+  font-size: 28px;
+}
+
+h1.poppins{
+  font-size: 26px;
+}
+
+h2.poppins{
+  font-size: 20px;
+}
+
+.inlineFas-left{
+  margin-right: 13px;
+}
+
+.inlineFas-right{
+  margin-left: 13px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----------------------- Nav --------------------- */
+nav{
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  text-align: center;
+  background-color: #2274A5;
+  color: #fff;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+}
+
+nav a{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tabs{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.siteLink{
+  cursor: pointer;
+  -webkit-transition: color 200ms ease-out 0ms;
+  -moz-transition: color 200ms ease-out 0ms;
+  -o-transition: color 200ms ease-out 0ms;
+  transition: color 200ms ease-out 0ms;
+}
+
+.siteLink:hover{
+  color: #DB504A;
+}
+
+.navLink, .link{
+  border-bottom: 3px solid #DB504A;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-transition: background-color 200ms ease-out 0ms;
+  -moz-transition: background-color 200ms ease-out 0ms;
+  -o-transition: background-color 200ms ease-out 0ms;
+  transition: background-color 200ms ease-out 0ms;
+}
+
+.navLink:hover, .link:hover{
+  cursor: pointer;
+  background-color: #DB504A;
+}
+
+.siteTitle{
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#siteTitleBottom{
+  margin-top: -12px;
+}
+
+/* ----------------------- First Cont --------------------- */
+#firstCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #2274A5;
+  padding-top: 170px;
+  padding-bottom: 90px;
+}
+
+#mission{
+  width: 40%;
+  color: #fff;
+}
+
+#blsCont{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.b-l-s{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.b-l-s img{
+  width: 75px;
+}
+
+.blsText{
+  margin-top: 8px;
+}
+.blsText, .blsText2{
+  font-weight: 700;
+}
+
+span.b-l-s{
+  background-color: #E3B505;
+  width: 144px;
+  padding: 20px;
+  border-radius: 72px;
+}
+
+#singleGirlComp{
+  background-image: url(static/images/kobu-agency-685117-unsplash-cropped.jpg);
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* ----------------------- Second Cont --------------------- */
+#secondCont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#demoCont{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.demos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demos img{
+  width: 75px;
+}
+
+#demograph{
+  width: 45%;
+}
+
+/* ----------------------- Third Cont --------------------- */
+#thirdCont{
+  background-color: rgba(34,116,165,.3);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#courseHeader{
+  text-align: center;
+}
+
+#courseRow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.courseRowContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+#courseRow img{
+  width: 180px;
+  height: 300px;
+}
+
+.innerRowContent{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* ----------------------- Contact --------------------- */
+#contact{
+  display: none;
+  padding-bottom: 50px;
+}
+
+#contactHead{
+  background-color: #2274A5;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+#mc_embed_signup{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact p{
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  /* padding-bottom: 40px; */
+}
+
+/* ----------------------- Facilitators --------------------- */
+#facilitators{
+  display: none;
+}
+
+#facilitatorHead{
+  background-color: #2274A5;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+#instructorsTitle{
+  text-align: center;
+  padding-top: 40px;
+}
+
+#facContent{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.facCards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.facCards img{
+  width: 200px;
+}
+
+/* ----------------------- Footer --------------------- */
+footer{
+  text-align: center;
+  background-color: #2274A5;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer p{
+  font-size: .75em;
+}
