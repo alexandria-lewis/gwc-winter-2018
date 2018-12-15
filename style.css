@@ -127,7 +127,7 @@ nav{
 
 .linkMobile{
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   -webkit-transition: color 200ms ease-out 0ms;
   -moz-transition: color 200ms ease-out 0ms;
   -o-transition: color 200ms ease-out 0ms;
@@ -443,10 +443,10 @@ footer p{
 /* ----------------------- Smaller Screens --------------------- */
 @media screen and (max-width: 850px) {
   span.b-l-s{
-    width: 114px;
+    width: 84px;
   }
   .b-l-s img{
-    width: 50px;
+    width: 30px;
   }
   .blsText, .blsText2{
     font-size: 9px;
