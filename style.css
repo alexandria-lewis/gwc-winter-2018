@@ -121,8 +121,8 @@ nav{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding-left: 90px;
-  padding-top: 90px;
+  padding-left: 30px;
+  padding-top: 100px;
 }
 
 .linkMobile{
@@ -442,15 +442,25 @@ footer p{
 
 /* ----------------------- Smaller Screens --------------------- */
 @media screen and (max-width: 850px) {
+  span.b-l-s{
+    width: 114px;
+  }
+  .b-l-s img{
+    width: 50px;
+  }
+  .blsText, .blsText2{
+    font-size: 9px;
+  }
   #firstCont{
     flex-direction: column;
+    padding-bottom: 40px;
   }
   #mission, #blsCont{
     width: 100% !important;
   }
   #mission{
     text-align: center;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
   }
   #blsCont{
     justify-content: space-around !important;
@@ -458,7 +468,9 @@ footer p{
   #singleGirlComp{
     height: 200px !important;
   }
-  
+  #courseHeader{
+    margin-bottom: 20px;
+  }
   #secondCont{
     flex-direction: column;
   }
@@ -469,7 +481,7 @@ footer p{
     padding-bottom: 20px;
   }
   #demograph h1{
-    text-align: center;
+    text-align: left;
   }
   #courseRow{
     flex-direction: column;
@@ -511,8 +523,5 @@ footer p{
   }
   #burger{
     display: block !important;
-  }
-  #mobileMenu{
-    display: block;
   }
 }
