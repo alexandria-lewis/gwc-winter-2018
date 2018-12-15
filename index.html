@@ -17,9 +17,13 @@
     <script src="main.js" charset="utf-8"></script>
   </head>
   <body>
+    <span id="burger">
+      <i class="fasBurger fas fa-bars"></i>
+      <i class="fasBurger fas fa-times"></i>
+    </span>
     <nav>
-      <a href="#facilitators" class="tabs">
-        <div id="facilitatorsLink" class="navLink">About</div>
+      <a href="#about" class="tabs bigScreen">
+        <div id="aboutLink" class="navLink">ABOUT</div>
       </a>
       <a href="#homePage" class="tabs">
         <div id="siteTitleCont" class="siteLink">
@@ -27,10 +31,17 @@
           <h1 id="siteTitleBottom" class="poppins siteTitle">Girls Who Code Club</h1>
         </div>
       </a>
-      <a href="#contact" class="tabs">
-        <div id="contactLink" class="navLink">Contact</div>
+      <a href="#contact" class="tabs bigScreen">
+        <div id="contactLink" class="navLink">CONTACT</div>
       </a>
     </nav>
+    
+    <div id="mobileMenu">
+      <div id="mobileInner">
+        <span><a href="#about" class="linkMobile">ABOUT</a></span>
+        <span><a href="#contact" class="linkMobile">CONTACT</a></span>
+      </div>
+    </div>
     
     <div id="homePage" class="tab_content">
       <article id="firstCont">
@@ -39,6 +50,13 @@
           <span class="firstBlurb">
             Closing the gender gap in technology by teaching girls to code.
           </span>
+          <br>
+          <p>
+            <span class="matchLink">Next Course Starts January 12<sup>th</sup>!</span><br>
+            <a href="mailto:SBoilard@coj.net">
+              <span class="link">Contact us for sign up information!</span>
+            </a>
+          </p>
         </section>
         
         <aside id="blsCont">
@@ -117,27 +135,88 @@
       </article>
     </div>
     
-    <article id="facilitators" class="tab_content">
+    <article id="about" class="tab_content">
       <div id="facilitatorHead"></div>
-      <h1 id="instructorsTitle" class="alegreya">Instructors</h1>
-      <section id="facContent">
-        <div id="steph" class="facCards">
-          <img src="static/site-icons-svg/016-robotic.svg" alt="">
-          <h2 class="poppins">Stephanie Boilard</h2>
-          <p>
-            Stephanie is currently pursuing her Master of Science in Information (to become a Librarian)! She has worked in public libraries since 2012 and loves what she does. She has too many hobbies but especially loves coding in her free time. Stephanie is thrilled to help introduce computer programming to the next generation!
-          </p>
+      
+      <section id="courseDates">
+        <h1 id="datesTitle" class="alegreya aboutTitle">Next Session Details</h1>
+        <div id="courseCont">
+          <table id="courseTable">
+            <tr>
+              <th colspan="4">January</th>
+            </tr>
+            <tr>
+              <td class="passed">5</td>
+              <td>12</td>
+              <td>19</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <th colspan="4">February</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>9</td>
+              <td>16</td>
+              <td>23</td>
+            </tr>
+            <tr>
+              <th colspan="4">March</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>9</td>
+              <td>16</td>
+              <td>23</td>
+            </tr>
+          </table>
+          <div id="courseDetails">
+            <h2 class="poppins">Saturdays, 10:30AM - 12:00PM</h2>
+            <p>
+              The course lasts 11 weeks.<br>
+              Unfortunately girls will find it difficult to start mid-session.<br><br>
+              Location: Main Library, Classroom 124-E<br>
+              <span id="address">303 North Laura Street, Jacksonville, FL 32202</span>
+            </p>
+          </div>
         </div>
-        <div id="alex" class="facCards">
-          <img src="static/site-icons-svg/017-roboto-logo.svg" alt="">
-          <a href="http://www.alexandrialewis.io/" target="_blank">
-            <h2 class="poppins link">
-              Alexandria Lewis<i class="fas fa-link inlineFas-right alexLink"></i>
-            </h2>
-          </a>
-          <p>
-            Alex is a UI/UX web developer, living her dream! She has been teaching kids coding since she enrolled in Coding Bootcamp. She is passionate about welcoming women, young and old, into web development. This club has been the perfect vehicle to inspire the next generation of female STEM students!
-          </p>
+      </section>
+      
+      <section id="gwc">
+        <h1 id="gwcAbout" class="alegreya aboutTitle">About the Organization</h1>
+        
+        <p id="gwcAboutCont">
+          <a href="https://girlswhocode.com/" target="_blank"><span class="link">Girls Who Code</span></a> (GWC) Clubs are free extracurricular programs for 3rd-5th and 6th-12th grade girls that teach participants about Computer Science (CS) in a fun and safe environment!<br><br>
+
+          GWC Clubs take place throughout the academic year. They serve as a place for girls to spend time together while learning about CS and building their confidence.<br><br>
+
+          Clubs provide participants with a sisterhood of supportive peers and role models, and an opportunity to use their skills to positively impact their community.<br><br>
+
+          Clubs are hosted at non-profit locations, such as schools, libraries, and community centers. They are led by volunteer Facilitators, who use the curriculum and resources provided by GWC on our learning platform, HQ.
+        </p>
+      </section>
+      
+      <section id="facContent">
+        <h1 class="alegreya aboutTitle facTitle">Instructors</h1>
+        <div id="facSecond">
+          <div id="steph" class="facCards">
+            <img src="static/site-icons-svg/016-robotic.svg" alt="">
+            <h2 class="poppins">Stephanie Boilard</h2>
+            <p>
+              Stephanie is currently pursuing her Master of Science in Information (to become a Librarian)! She has worked in public libraries since 2012 and loves what she does. She has too many hobbies but especially loves coding in her free time. Stephanie is thrilled to help introduce computer programming to the next generation!
+            </p>
+          </div>
+          <div id="alex" class="facCards">
+            <img src="static/site-icons-svg/017-roboto-logo.svg" alt="">
+            <a href="http://www.alexandrialewis.io/" target="_blank">
+              <h2 class="poppins link">
+                Alexandria Lewis<i class="fas fa-link inlineFas-right alexLink"></i>
+              </h2>
+            </a>
+            <p>
+              Alex is a UI/UX web developer, living her dream! She has been teaching kids coding since she enrolled in Coding Bootcamp. She is passionate about welcoming women, young and old, into web development. This club has been the perfect vehicle to inspire the next generation of female STEM students!
+            </p>
+          </div>
         </div>
       </section>
     </article>
