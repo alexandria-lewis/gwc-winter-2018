@@ -188,6 +188,23 @@ nav a{
 }
 
 /* ----------------------- First Cont --------------------- */
+#octocatsLink{
+  background-color: #2274A5;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+#octocatsLink a{
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: #DB504A;
+}
+
+#octocatsLink a:hover{
+  text-decoration: underline;
+}
+
 #firstCont {
   display: flex;
   align-items: center;
@@ -195,7 +212,6 @@ nav a{
   padding-left: 20px;
   padding-right: 20px;
   background-color: #2274A5;
-  padding-top: 170px;
   padding-bottom: 90px;
 }
 
